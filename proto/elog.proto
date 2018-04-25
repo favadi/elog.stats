@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package elog.stats;
+
+option  go_package = "pb/elog";
+
+import "google/protobuf/empty.proto";
+
+service Elog {
+  rpc Create (Event) returns (google.protobuf.Empty)  {};
+  rpc List   (Query) returns (stream Event) {};
+}
+
+message Event {
+  string              ip_client = 1;
+  string              ip_server = 2;
+  map<string, string> tags      = 3;
+  string              message   = 4;
+};
+
+message Query {
+  string              ip_client = 1;
+  string              ip_server = 2;
+  map<string, string> tags      = 3;
+}

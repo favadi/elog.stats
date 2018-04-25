@@ -1,0 +1,10 @@
+__*
+_vendor*
+.DS_Store
+.goconvey
+.vscode
+*.test
+bin
+debug
+debug*
+vendor/
