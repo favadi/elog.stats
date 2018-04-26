@@ -3,12 +3,12 @@ package elog
 import (
 	"context"
 
-	"elog.stats/elog/model"
-	"elog.stats/elog/param"
-	"elog.stats/elog/store"
+	"github.com/txchuyen/elog.stats/elog/model"
+	"github.com/txchuyen/elog.stats/elog/param"
+	"github.com/txchuyen/elog.stats/elog/store"
 
-	epb "elog.stats/pb/elog"
 	gpb_empty "github.com/golang/protobuf/ptypes/empty"
+	epb "github.com/txchuyen/elog.stats/pb/elog"
 )
 
 type elogServer struct {

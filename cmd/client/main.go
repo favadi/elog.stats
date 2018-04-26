@@ -10,8 +10,8 @@ import (
 
 	"google.golang.org/grpc"
 
-	pb "elog.stats/pb/elog"
 	"github.com/spf13/cobra"
+	pb "github.com/txchuyen/elog.stats/pb/elog"
 )
 
 var (
@@ -62,6 +62,7 @@ func init() {
 }
 
 func main() {
+	// TODO: rootCmd.Execute() returns an error, handle it
 	rootCmd.Execute()
 }
 

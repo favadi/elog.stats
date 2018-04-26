@@ -3,7 +3,7 @@ package model
 import (
 	"errors"
 
-	epb "elog.stats/pb/elog"
+	epb "github.com/txchuyen/elog.stats/pb/elog"
 )
 
 // Event ...

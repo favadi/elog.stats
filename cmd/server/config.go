@@ -1,8 +1,8 @@
 package main
 
 import (
-	"elog.stats/config"
 	"github.com/spf13/viper"
+	"github.com/txchuyen/elog.stats/config"
 )
 
 func init() {

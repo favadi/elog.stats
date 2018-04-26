@@ -1,8 +1,8 @@
 package param
 
 import (
-	"elog.stats/elog/model"
-	epb "elog.stats/pb/elog"
+	"github.com/txchuyen/elog.stats/elog/model"
+	epb "github.com/txchuyen/elog.stats/pb/elog"
 )
 
 // Query ...

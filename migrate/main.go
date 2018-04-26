@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"os"
 
-	"elog.stats/config"
 	"github.com/go-pg/migrations"
 	"github.com/go-pg/pg"
 	"github.com/spf13/viper"
+	"github.com/txchuyen/elog.stats/config"
 )
 
 func init() {
@@ -62,6 +62,7 @@ func main() {
 }
 
 func usage() {
+	// TODO: it should be fmt.Println as there is no formatting directive
 	fmt.Printf(usageText)
 	flag.PrintDefaults()
 	os.Exit(2)

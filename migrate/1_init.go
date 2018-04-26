@@ -5,6 +5,8 @@ import (
 )
 
 func init() {
+	// TODO: https://godoc.org/github.com/go-pg/migrations#Register
+	// migrations.Register returns an error, handle it
 	migrations.Register(func(db migrations.DB) error {
 		queries := []string{
 			`CREATE TABLE events (

@@ -5,14 +5,15 @@ import (
 
 	"go.uber.org/zap"
 
-	"elog.stats/elog"
-	"elog.stats/elog/store"
-	"elog.stats/middleware/log"
-	pb "elog.stats/pb/elog"
+	"github.com/txchuyen/elog.stats/elog"
+	"github.com/txchuyen/elog.stats/elog/store"
+	"github.com/txchuyen/elog.stats/middleware/log"
+	pb "github.com/txchuyen/elog.stats/pb/elog"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 
 	// unmarshal any.Anty into proto.Message ...
+	// TODO: why?
 	_ "github.com/golang/protobuf/ptypes/any"
 	_ "github.com/golang/protobuf/ptypes/duration"
 	_ "github.com/golang/protobuf/ptypes/empty"

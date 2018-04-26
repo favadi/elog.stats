@@ -73,6 +73,7 @@ func (w *wrappedServerStream) Context() context.Context {
 	return w.WrappedContext
 }
 
+// TODO: unused function
 // WrapServerStream returns a ServerStream that has the ability to overwrite context.
 func wrapServerStream(stream grpc.ServerStream) *wrappedServerStream {
 	if existing, ok := stream.(*wrappedServerStream); ok {

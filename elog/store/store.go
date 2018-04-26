@@ -1,9 +1,9 @@
 package store
 
 import (
-	"elog.stats/elog/model"
-	"elog.stats/elog/param"
 	"github.com/go-pg/pg"
+	"github.com/txchuyen/elog.stats/elog/model"
+	"github.com/txchuyen/elog.stats/elog/param"
 )
 
 // Eventer ...
